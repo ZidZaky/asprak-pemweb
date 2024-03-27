@@ -1,11 +1,7 @@
-body{
-    color: green;
-    background: white;
-    font-family: Arial, Helvetica, sans-serif;
+p{
+    color: black !important;
 }
 
-h1{
-    color: black;
-    background-color: aqua;
-    font-size: 10px;
+body{
+    color: black ;
 }
