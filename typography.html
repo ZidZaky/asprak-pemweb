@@ -1,14 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Typography</title>
     <style>
+      body {
+        background-color: beige;
+      }
+      h1 {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 50px;
+        color: brown;
+        font-weight: lighter;
+        font-style: italic;
+      }
 
+      p {
+        text-decoration: underline;
+        text-transform: uppercase;
+        text-align: right;
+        line-height: 2;
+        letter-spacing: 10px;
+      }
+
+      p.persen {
+        font-size: 120%;
+      }
+
+      p.pixel {
+        font-size: 19.2px;
+      }
+
+      body {
+        font-size: 16px;
+      }
+
+      div {
+        font-size: 1.5em;
+      }
+
+      p.keyword {
+        color: blue;
+      }
+
+      p#rgb {
+        color: #fc4912;
+      }
+
+      p.rgb {
+        color: rgb(29, 191, 64);
+      }
+
+      p.rgba {
+        color: rgba(20, 10, 210, 0.5);
+      }
+
+      p.hsl {
+        color: hsl(100, 20%, 40%);
+      }
     </style>
-</head>
-<body>
-    
-</body>
-</html>l
+  </head>
+  <body>
+    <h1>Pengenalan CSS Dasar</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque pariatur
+      voluptas explicabo quis nihil? Mollitia dolore ipsam totam, ipsa,
+      voluptatem, deleniti neque cum aperiam a unde vel repudiandae est ex.
+    </p>
+    <br />
+    <br />
+    <br />
+    <p>Paragraph Default</p>
+    <p class="persen">Paragraphy 120%</p>
+    <p class="pixel">Paragraph 19.2px</p>
+
+    <br />
+    <br />
+    <br />
+
+    <div>
+      child element 1
+      <div>
+        child elemen 2
+        <div>
+          child elemen 3
+          <div>child elemen 4</div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <p class="keyword">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quam
+      vitae, omnis rem hic dignissimos aspernatur ab nobis laborum beatae porro.
+      Repudiandae impedit, odio dicta quis dolores dolorum modi a.
+    </p>
+    <p id="rgb">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quam
+      vitae, omnis rem hic dignissimos aspernatur ab nobis laborum beatae porro.
+      Repudiandae impedit, odio dicta quis dolores dolorum modi a.
+    </p>
+    <p class="rgb">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quam
+      vitae, omnis rem hic dignissimos aspernatur ab nobis laborum beatae porro.
+      Repudiandae impedit, odio dicta quis dolores dolorum modi a.
+    </p>
+    <p class="rgba">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quam
+      vitae, omnis rem hic dignissimos aspernatur ab nobis laborum beatae porro.
+      Repudiandae impedit, odio dicta quis dolores dolorum modi a.
+    </p>
+    <p class="hsl">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quam
+      vitae, omnis rem hic dignissimos aspernatur ab nobis laborum beatae porro.
+      Repudiandae impedit, odio dicta quis dolores dolorum modi a.
+    </p>
+  </body>
+</html>
+l
