@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector</title>
+    <style>
+      /* Universal Selector */
+      * {
+        color: brown;
+        background-color: bisque;
+      }
+      /* Selector Element */
+      h1 {
+        color: black;
+        font-size: 20px;
+      }
+      /* Class */
+      .heading {
+        background-color: aquamarine;
+      }
+      /* ID */
+      #head {
+        background-color: aliceblue;
+        color: blue;
+      }
+
+      /* Group Selector */
+      h2,
+      h3,
+      h4 {
+        color: aliceblue;
+        background-color: aqua;
+      }
+
+      /* Elemen Specific Selector */
+      h2.heading {
+        background-color: black;
+        color: white;
+      }
+      p#head {
+        background-color: black;
+        color: wheat;
+      }
+
+      /* Descendant Selector */
+      div p {
+        text-align: center;
+        font-size: x-large;
+      }
+
+      /* child selector */
+      div > p{
+        color: aqua;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Heading One</h1>
+    <p>Paragraph One</p>
+    <hr />
+    <h1>Heading Two</h1>
+    <p>Paragraph Two</p>
+    <hr />
+    <h2 class="heading">Heading 3</h2>
+    <p class="heading">Paragraph 3</p>
+    <hr />
+    <h2 id="head">Heading 4</h2>
+    <p id="head">Paragraph 4</p>
+    <hr />
+    <h2>Halo 2</h2>
+    <h3>Halo 3</h3>
+    <h4>Halo 4</h4>
+    <hr />
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, modi
+        deleniti recusandae quam, aspernatur quis velit, quod laborum magni
+        officia eligendi beatae minus iure et. Ex repellat quia cum ullam.
+      </p>
+    </div>
+  </body>
+</html>
