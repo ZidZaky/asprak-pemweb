@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipe data di JS</title>
+  </head>
+  <body>
+    <h1>Mengenal Tipe data Di JS</h1>
+    <script>
+      //number
+      let positif = +100;
+      let negatif = -100023;
+      let desimal = 0.214;
+      console.log(positif);
+      console.log(negatif);
+      console.log(desimal);
+
+      //String
+      let text;
+
+      text = "hello World";
+      console.log(text);
+
+      //type of
+      let angka;
+      angka = 109223;
+      console.log(typeof angka);
+
+      let kalimat = "Selamat Pagi";
+      console.log(typeof kalimat);
+
+      //template string
+      let user = "Zidan";
+      let sambutan = `Selamat Pagi! Mr.${user}`;
+      console.log(sambutan);
+
+      let sambutan2 = "Selamat pagi! Mr." + user + "Zaky";
+      console.log(sambutan2);
+
+      //boolean
+      let benar = true;
+      let salah = false;
+      console.log("Aku " + benar + ",Kamu " + salah);
+
+      // null
+      let nulls = null;
+      console.log(nulls);
+
+      //array
+      let cars = ["Toyota", "Mercedes", "Ferrari", "Lamborghini"];
+      console.log(cars[1]);
+
+      cars[1] = "Honda";
+      console.log(cars[1]);
+
+      let [car1, car2, car3, car4] = cars;
+      console.log(car1);
+      console.log(car2);
+      console.log(car3);
+      console.log(car4);
+    </script>
+  </body>
+</html>

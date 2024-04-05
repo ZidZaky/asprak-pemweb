@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON FETCH</title>
+  </head>
+  <body>
+    <h1>Belajar Fetch JSON</h1>
+  </body>
+  <script>
+    //JSON PARSE
+    let mahasiswaJSON = `{"nim":"1201223","nama":"Budi","jurusan":"Informatika"}`;
+    console.log(mahasiswaJSON);
+    let mahasiswa = JSON.parse(mahasiswaJSON);
+    console.log("Mahasiswa : ", mahasiswa);
+
+    //JSON Stringify
+    let mahasiswa2 = {
+      nim: "12012203",
+      nama: "sari",
+      jurusan: "sistem",
+    };
+    let mahasiswa2JSON = JSON.stringify(mahasiswa2);
+    console.log(mahasiswa2JSON);
+
+    //FETCH
+    fetch("https://reqres.in/api/users/1")
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Data: ", data);
+        let user = data.data;
+        console.log(user.id);
+        console.log(user.email);
+        console.log(user.first_name);
+      });
+  </script>
+</html>

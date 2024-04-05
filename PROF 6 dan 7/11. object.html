@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <h1>Object di js</h1>
+    <script>
+      //empty
+      let foo = {};
+      console.log(typeof foo);
+
+      //object
+      let pegawai = {
+        nama: "Zidan",
+        ttl: "Surabaya, 14 Geb",
+        jabatan: "Pegawai Tetap",
+      };
+      console.log(pegawai);
+      console.log(pegawai.nama);
+      console.log(pegawai.jabatan);
+      console.log(pegawai.ttl);
+
+      //menambah property
+      let game = {
+        nama: "cod",
+        tahunrilis: "2001",
+      };
+      console.log(game);
+      game.genre = "FPS";
+      console.log(game);
+
+      //mengubah nilai property
+      let mahasiswa = {
+        nama: "Zidan",
+        angkatan: "22",
+      };
+      console.log(mahasiswa);
+      mahasiswa.nama = "Zaky";
+      console.log(mahasiswa);
+
+      //Object method
+      let buku = {
+        nama: "Bulan",
+        penulis: "tere liye",
+        dibaca: function () {
+          return "Buku " + this.nama + " ini sedang dibaca";
+        },
+      };
+      console.log(buku);
+      console.log(buku.dibaca());
+
+      ////spread operator
+      let pekerja = {
+        nama: "Budi",
+        asal: "Sidoarjo",
+      };
+      let banyakpekerja = { ...pekerja };
+      banyakpekerja.status = "aktif";
+      console.log(pekerja.status);
+      console.log(banyakpekerja.status);
+
+      //for in object
+      let videogame = {
+        nama : "valorant",
+        genre : "FPS",
+        tahunrilis : "2015"
+      }
+      for (let prop in videogame){
+        console.log("Prop :", prop);
+        console.log("Value :" + videogame[prop]);
+      }
+    </script>
+  </body>
+</html>

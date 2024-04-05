@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Built in</title>
+</head>
+<body>
+    <h1>Latihan Built in object</h1>
+    <script>
+        //number
+        console.log("max Number = " + Number.MAX_VALUE );
+        console.log("min Number = " + Number.MIN_VALUE );
+        console.log(" Is A integer? " + Number.isInteger("A"));
+        console.log(" Is 12 integer? " + Number.isInteger(12));
+
+        //intance method
+        let foo = new Number(15.132213);
+        console.log("to precision = ", foo.toPrecision(5));
+
+        //property math
+        console.log(Math.E);
+        console.log(Math.LN10);
+        console.log(Math.LN2);
+        console.log(Math.LOG10E);
+        console.log(Math.LOG2E);
+        console.log(Math.PI);
+        console.log(Math.SQRT1_2);
+        console.log(Math.SQRT2);
+
+        //Math static method
+        let Num = 12.5;
+        console.log(Math.floor(Num));
+        console.log(Math.ceil(Num));
+        console.log(Math.round(Num));
+
+        console.log(Math.random(0,10));
+        console.log(Math.pow(5,3));
+
+
+        //String
+        let text = new String(" Selamat Datang ");
+        console.log(text.length);
+        console.log(text.toLowerCase());
+        console.log(text.toUpperCase());
+        console.log(text.trim());
+
+        //array
+        let huruf = new Array("a","b","c","d","e");
+        console.log(Array.isArray(huruf));
+        console.log(huruf.length);
+        huruf.forEach((Element) => {
+            console.log(Element);
+        })
+        //length, for each
+
+    </script>
+</body>
+</html>

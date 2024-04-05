@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Val</title>
+  </head>
+  <body>
+    <h1>Belajar Javascript: Form Validation</h1>
+    <form id="formKu" name="formKu" method="get" action="proses.php">
+      <p>
+        Username: <input type="text" name="username" id="username" />
+        <span id="usernameSpan"></span>
+      </p>
+      <!-- <p>
+        Password: <input type="password" name="pass" id="pass" />
+        <span id="passSpan"></span>
+      </p>
+      <p>
+        Konfirmasi Password:
+        <input type="password" name="konfPass" id="konfPass" /><span
+          id="konfPassSpan"
+        ></span>
+      </p>
+      <p>
+        <input type="checkbox" name="syarat" id="syarat" /> Saya menyetujui
+        syarat dan ketentuan<span id="syaratSpan"></span>
+      </p> -->
+      <p>
+        <input type="submit" name="submit" id="submit" value="Kirim Data" />
+      </p>
+    </form>
+    <script>
+      let formKuNode = document.getElementById("formKu");
+      let usernameNode = document.getElementById("username");
+      let usernameSpanNode = document.getElementById("usernameSpan");
+    //   let passNode = document.getElementById("pass");
+    //   let passSpanNode = document.getElementById("passSpan");
+    //   let konfNode = document.getElementById("konfPass");
+    //   let konfPassNode = document.getElementById("konfPassSpan");
+    //   let syaratNode = document.getElementById("syarat");
+    //   let syaratSpanNode = document.getElementById("syaratSpan");
+
+      const diProses = (e) => {
+
+        // ini checking username
+        let usernameError = "";
+
+        if (usernameNode.value.trim() === "") {
+          usernameError = "Username harus diisi";
+        } else if (/\W/.test(usernameNode.value.trim())) {
+          usernameError = "Username hanya bisa diisi karakter alfanumerik";
+        } else if (usernameNode.value.trim().length < 10) {
+          usernameError = "minimal 10 karakter";
+        }
+
+        if(usernameError !== ""){
+            usernameSpanNode.innerHTML = usernameError;
+            usernameSpanNode.className = "error";
+            usernameSpanNode.style.color = "red";
+            e.preventDefault();
+        }
+
+        
+      };
+
+      const hapuserror = (e) => {
+        e.target.style.border = "";
+        e.target.parentElement.lastElementChild.innerHTML = "";
+      };
+
+      formKuNode.addEventListener("submit",diProses);
+      usernameNode.addEventListener("focus", hapuserror);
+    </script>
+  </body>
+</html>

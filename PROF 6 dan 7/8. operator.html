@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator di JS</title>
+  </head>
+  <body>
+    <h1>Operators in JavaScript</h1>
+    <script>
+      //aritmatika dasar
+      let a = 5 + 6;
+      console.log(a);
+
+      a = 5 - 7;
+      console.log(a);
+
+      a = 3 * 9;
+      console.log(a);
+
+      a = 2 ** 4;
+      console.log(a);
+
+      a = 4 / 2;
+      console.log(a);
+
+      a = 3 % 2;
+      console.log(a);
+
+      //increment dan decrement
+      let val = 7;
+      console.log(val); // 7
+      console.log(++val); // 8
+      console.log(val++); // 8
+      console.log(val); // 9
+
+      console.log(val); // 9
+      console.log(--val); // 8
+      console.log(val--); // 8
+      console.log(val); // 7
+
+      //spread
+      let angka = [1, 2, 3, 4, 5];
+      let huruf = ["a", "b", "c", "d", "e"];
+      console.log(angka);
+      console.log(huruf);
+
+      let huruf2 = ["f", "g", ...huruf];
+      console.log(huruf2);
+
+      let gabungan = [...angka, ...huruf];
+      console.log(gabungan);
+
+      //spread operator object
+      let mahasiswa = {
+        nama: "Budi",
+        umur: 20,
+        jurusan: "Informatika",
+      };
+
+      let mahasiswa1 = {
+        ...mahasiswa,
+        umur : 21,
+        tempatlahir : "surabaya"
+      }
+
+      console.log(mahasiswa1);
+    </script>
+  </body>
+</html>

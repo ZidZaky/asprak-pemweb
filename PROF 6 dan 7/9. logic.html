@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logic di javascript</title>
+  </head>
+  <body>
+    <h1>Logics</h1>
+    <script>
+      //if
+      let user = "admin";
+      if (user === "admin") {
+        console.log("Selamat Datang, Admin Aplikasi");
+      }
+      //ifelse
+      let user2 = "pengguna";
+      if (user2 === "admin") {
+        console.log("Selamat Datang, Admin Aplikasi");
+      } else {
+        console.log("Kau bukan admin, jangan akses aplikasi ini");
+      }
+      //switch case
+      let harike = 2;
+
+      switch (harike) {
+        case 1:
+          console.log("hari ini senin");
+          break;
+        case 2:
+          console.log("hari ini selasa");
+          break;
+        case 3:
+          console.log("hari ini rabu");
+          break;
+        case 4:
+          console.log("hari ini kamis");
+          break;
+        case 5:
+          console.log("hari ini jumat");
+          break;
+        case 6:
+          console.log("hari ini sabtu");
+          break;
+        case 7:
+          console.log("hari ini minggu");
+          break;
+      }
+      //for
+      for (let i = 100; i >= 0; i--) {
+        console.log(i);
+      }
+
+      //menampilkan array
+      let mobil = ["toyota", "honda", "mercedes", "volkswagen", "subaru"];
+      for (let i = 0; i < 5; i++) {
+        console.log(mobil[i]);
+      }
+
+      //array.lenght
+      let mobil2 = ["toyota", "honda", "mercedes", "volkswagen", "subaru"];
+      let panjang_array_mobil = mobil2.length;
+      console.log("Panjang Daftar Mobil : " + panjang_array_mobil);
+      for (let i = 0; i < panjang_array_mobil; i++) {
+        console.log(mobil[i]);
+      }
+
+      //foreach
+      let mobil3 = ["toyota", "honda", "mercedes", "volkswagen", "subaru"];
+      for (let isinya of mobil3) {
+        console.log(isinya);
+      }
+    </script>
+  </body>
+</html>

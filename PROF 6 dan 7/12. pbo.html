@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h1>Object Oriented programming</h1>
+    <script>
+        // Javascript Class
+        class mahasiswa{
+            constructor(nama, prodi, angkatan){
+                this.nama = nama;
+                this.prodi = prodi;
+                this.angkatan = angkatan;
+            }
+
+            hadir() {
+                return `${this.nama} telah hadir dikelas`
+            }
+
+            sakit() {
+                return `${this.nama} sedang sakit dan tidak bisa hadir dikelas`
+            }
+            
+        }
+        console.log(mahasiswa);
+        let mahasiswa1 = new mahasiswa("budi", "Informatika", "21");
+        console.log(mahasiswa1);
+        console.log(mahasiswa1.hadir());
+        console.log(mahasiswa1.sakit());sa
+        let mahasiswa2 = new mahasiswa("Sari", "Sistem Informasi", "22");
+        console.log(mahasiswa2);
+        console.log(mahasiswa2.sakit());
+    </script>
+</body>
+</html>

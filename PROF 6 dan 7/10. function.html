@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functiion</title>
+  </head>
+  <body>
+    <h1>Function in JS</h1>
+    <form action="">
+      <input type="text" id="nilai1" />
+      <input type="text" id="nilai2" />
+      <button id="Submit"></button>
+    </form>
+    <h2 id="hasil"></h2>
+    <script>
+      function tambah(a, b) {
+        return a + b;
+      }
+
+      document
+        .getElementById("Submit")
+        .addEventListener(
+          "click",
+          (document.getElementById("hasil").innerHTML = tambah(
+            document.getElementById("nilai1"),
+            document.getElementById("nilai2")
+          ))
+        );
+
+      // calling function
+      function pagi() {
+        console.log("Selamat Pagi");
+      }
+      pagi();
+
+      // return function
+      function nilaiku() {
+        return 90;
+      }
+      let nilaiakhir = nilaiku();
+      console.log(nilaiakhir);
+
+      // using params
+      function sambutan(nama) {
+        return "halo " + nama;
+      }
+      console.log(sambutan("Zidan"));
+      console.log(sambutan("Irfan"));
+      console.log(sambutan("Zaky"));
+      console.log(sambutan());
+
+      // parameter default
+      function panggil(nama = "budi", umur = "19") {
+        return "halo " + nama + "Umur anda " + umur;
+      }
+      console.log(panggil());
+      console.log(panggil("Zidan", 20));
+
+      // const function
+      const perpangkatan = function (nilai1, nilai2) {
+        return nilai1 ** nilai2;
+      };
+      console.log(perpangkatan(2, 6));
+
+      //arrow function\
+      const kuadrat = (angka) => {
+        return angka * angka;
+      };
+      console.log(kuadrat(5));
+
+      const sambut = (nama) => "Selamat Pagi " + nama;
+      console.log(sambut("Zidan"));
+    </script>
+  </body>
+</html>
